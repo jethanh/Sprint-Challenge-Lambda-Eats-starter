@@ -9,7 +9,9 @@ function App() {
       <Route exact path="/">
         <Home/>
       </Route>
-      <Route path="/form" component={Form}/>
+      <Route path="/pizza">
+        <Form/>
+      </Route>
     </div>
   );
 }

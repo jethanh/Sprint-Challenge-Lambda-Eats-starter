@@ -8,7 +8,7 @@ const Home = () => {
             <h2>good pizza mm.. yes.. cheesy</h2>
            
             <h3>click link button for pzza</h3>
-            <Link to={"/form"}>
+            <Link to={"/pizza"}>
                 <div>make pzza</div>
             </Link>
         </div>

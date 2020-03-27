@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 describe("testing form", function(){
     beforeEach(function(){
-        cy.visit("http://localhost:3000/form");
+        cy.visit("http://localhost:3000/pizza");
     })
     
     it("testy testy", function() {

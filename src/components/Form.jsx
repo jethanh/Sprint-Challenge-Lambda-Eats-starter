@@ -16,6 +16,7 @@ const formSchema = yup.object().shape({
 
 function Form() {
     const [buttonDisabled, setButtonDisabled] = useState(true);
+    
     const [formState, setFormState] = useState({
         name: "",
         size: "",
@@ -75,6 +76,8 @@ function Form() {
             });
         });
     };
+
+    
     
     const inputChange = e => {
         e.persist();
@@ -106,10 +109,11 @@ function Form() {
                     <select
                         id="size" 
                         name="size" 
+                        value={setFormState.size}
                         onChange={inputChange}>
-                        <option value="small">small</option>
-                        <option value="medium">medium</option>
-                        <option value="large">large</option>
+                        <option>small</option>
+                        <option>medium</option>
+                        <option>large</option>
                     </select>            
                    </label><br/>
                    <label htmlFor="cheese">
